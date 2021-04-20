@@ -1,0 +1,14 @@
+version: '2'
+services:
+  patient_db:
+    image: mysql:latest
+    volumes:
+      - "./.mysql-data/db:/var/lib/mysql"
+    restart: on-failure
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpw
+      MYSQL_DATABASE: patient
+      MYSQL_USER: patient
+      MYSQL_PASSWORD: password
