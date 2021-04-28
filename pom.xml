@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <maven.compiler.release>11</maven.compiler.release>
         <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
         <springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
     </properties>
